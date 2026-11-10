@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">THBT — Thai baht, upgraded (Demo)</title>
+  <meta name="description" content="Internal demo of the THBT branding landing page." data-i18n-attr="content:meta.description">
+  <!-- Demo only: keep out of search until legal sign-off. -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Always use relative paths (no leading "/") so the site works under /thbt-demo/. -->
+  <link rel="icon" href="assets/img/coin.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/hero3d.js" defer></script>
+  <script src="assets/js/story.js" defer></script>
+  <script src="assets/js/stats.js" defer></script>
+  <script src="assets/js/swap.js" defer></script>
+  <script src="assets/js/coin-travel.js" defer></script>
+</head>
+<body>
+  <!-- Language switcher: buttons are built by assets/js/i18n.js from its LANGS list. -->
+  <nav class="lang-switch" aria-label="Language" data-i18n-attr="aria-label:lang.label"></nav>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <span class="badge" data-i18n="hero.badge">DEMO</span>
+      <span class="coin-anchor" data-coin-anchor aria-hidden="true"></span>
+      <h1 data-i18n="hero.title" data-i18n-html>Thai baht, <span class="brand">upgraded.</span></h1>
+      <p data-i18n="hero.lead">1 THBT = 1 THB — instant, onchain, inside TrueMoney.</p>
+      <a class="scroll-hint" href="#features"><span data-i18n="hero.scroll">Scroll to explore</span> <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <!--
+      3D phone built from CSS layers (no WebGL): a front face with the wallet screen,
+      stacked edge layers for thickness, and the Swap banner popped out in front.
+      Angle is set by --rx / --ry / --rz on .phone3d. It turns to face front as you scroll.
+    -->
+    <div class="hero-stage">
+      <div class="hero-float">
+        <div class="phone3d" data-coins="halo">
+          <div class="p3-edge" style="--i:1"></div>
+          <div class="p3-edge" style="--i:2"></div>
+          <div class="p3-edge" style="--i:3"></div>
+          <div class="p3-edge" style="--i:4"></div>
+          <div class="p3-edge" style="--i:5"></div>
+          <div class="p3-edge" style="--i:6"></div>
+          <div class="p3-edge" style="--i:7"></div>
+          <div class="p3-edge" style="--i:8"></div>
+          <div class="p3-edge" style="--i:9"></div>
+          <div class="p3-edge" style="--i:10"></div>
+          <div class="p3-edge" style="--i:11"></div>
+          <div class="p3-edge" style="--i:12"></div>
+          <div class="p3-edge" style="--i:13"></div>
+          <div class="p3-edge" style="--i:14"></div>
+          <div class="p3-edge" style="--i:15"></div>
+          <div class="p3-edge" style="--i:16"></div>
+          <div class="p3-edge" style="--i:17"></div>
+          <div class="p3-edge" style="--i:18"></div>
+          <div class="p3-front">
+            <div class="p3-screen">
+              <img src="assets/img/wallet-screen.png" width="375" height="812"
+                   alt="THBT wallet in the TrueMoney app, with the Swap THBT banner popping out of the screen."
+                   data-i18n-attr="alt:hero.phoneAlt">
+            </div>
+            <div class="p3-glare" aria-hidden="true"></div>
+          </div>
+          <div class="p3-layer" aria-hidden="true">
+            <div class="p3-pop"><div class="p3-pop-face"></div></div>
+
+            <!--
+              Coins burst out of the ฿ coin in the middle of the Swap banner:
+              THBT in front, the five swap currencies orbiting around it.
+            -->
+            <div class="coin-burst">
+              <div class="coin-emerge">
+                <div class="coin-orbit">
+                  <div class="coin-slot" style="--a:0deg"><div class="coin-counter"><div class="coin-face"><img src="assets/img/coins/usdt.svg" alt=""></div></div></div>
+                  <div class="coin-slot" style="--a:72deg"><div class="coin-counter"><div class="coin-face"><img src="assets/img/coins/usdc.svg" alt=""></div></div></div>
+                  <div class="coin-slot" style="--a:144deg"><div class="coin-counter"><div class="coin-face"><img src="assets/img/coins/eurc.svg" alt=""></div></div></div>
+                  <div class="coin-slot" style="--a:216deg"><div class="coin-counter"><div class="coin-face"><img src="assets/img/coins/xsgd.svg" alt=""></div></div></div>
+                  <div class="coin-slot" style="--a:288deg"><div class="coin-counter"><div class="coin-face"><img src="assets/img/coins/audd.svg" alt=""></div></div></div>
+                </div>
+                <div class="coin-hero"><img src="assets/img/coins/thbt.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--
+    Key numbers. Values live in STATS in assets/js/stats.js (swap that for an API call later).
+    The numbers below are the no-JS fallback; JS rolls each digit into place (odometer) when the section scrolls into view.
+  -->
+  <section class="stats" aria-label="THBT in numbers" data-i18n-attr="aria-label:stats.title">
+    <dl class="stats-grid">
+      <div class="stat">
+        <dt data-i18n="stats.supply">Circulating supply</dt>
+        <dd class="stat-value" data-stat="supply">1,398,000<span class="stat-unit">THBT</span></dd>
+      </div>
+      <div class="stat">
+        <dt data-i18n="stats.mcap">Market cap</dt>
+        <dd class="stat-value" data-stat="mcap">$41,950</dd>
+      </div>
+      <div class="stat">
+        <dt data-i18n="stats.fdv">Fully diluted valuation</dt>
+        <dd class="stat-value" data-stat="fdv">$41,950</dd>
+      </div>
+      <div class="stat">
+        <dt data-i18n="stats.volume">24h trading volume</dt>
+        <dd class="stat-value" data-stat="volume">$8,100</dd>
+      </div>
+    </dl>
+    <p class="stats-note" data-i18n="stats.note">Illustrative figures for the demo, not live data.</p>
+  </section>
+
+  <!--
+    Feature story: plays by itself (assets/js/story.js). Hovering the phone or the text pauses it so people can pick
+    a feature from the chips or use the ← / → keys; on touch screens, swipe the text.
+    Each step moves the spotlight to one area of the wallet screen and slides the next card in from the right.
+    data-x / data-y / data-w / data-h / data-r (corner radius) are px in the 375×812 Figma frame (10:3597),
+    taken from the Figma layers so the spotlight hugs each element. data-zoom is how far to zoom in.
+  -->
+  <section class="story" id="features" aria-label="THBT wallet features" data-i18n-attr="aria-label:story.label">
+    <div class="story-sticky">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="screen-zoom">
+            <img src="assets/img/wallet-screen.png" width="375" height="812"
+                 alt="THBT wallet screen in the TrueMoney app showing a 1,990.00 THBT balance, Issue, Withdraw, Transfer and Swap buttons, a swap promotion and a token list."
+                 data-i18n-attr="alt:story.phoneAlt">
+            <div class="spot" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-copy">
+        <span class="coin-anchor" data-coin-anchor aria-hidden="true"></span>
+        <h2 class="story-title" data-i18n="story.title">Our Service</h2>
+        <div class="story-viewport">
+          <ol class="story-track">
+            <li class="story-card" data-x="16" data-y="176" data-w="343" data-h="90" data-r="24" data-zoom="1">
+              <h3 data-i18n="story.s1.title">Your baht, onchain</h3>
+              <p data-i18n="story.s1.body">Every THBT is backed 1:1 by Thai baht. See your balance and its baht value at a glance.</p>
+            </li>
+            <li class="story-card" data-x="32" data-y="144" data-w="188" data-h="24" data-r="12" data-zoom="1.1">
+              <h3 data-i18n="story.s2.title">Name your wallet</h3>
+              <p data-i18n="story.s2.body">Give your wallet a name people can remember, instead of a long 0x… address.</p>
+            </li>
+            <li class="story-card" data-x="263" data-y="132" data-w="80" data-h="24" data-r="12" data-zoom="1.15">
+              <h3 data-i18n="story.s3.title">Receive with a QR</h3>
+              <p data-i18n="story.s3.body">Show your QR code to get THBT from anyone, in seconds.</p>
+            </li>
+            <li class="story-card" data-x="16" data-y="289" data-w="74" data-h="74" data-r="12" data-zoom="1.2">
+              <h3 data-i18n="story.s4.title">Issue</h3>
+              <p data-i18n="story.s4.body">Turn baht from your TrueMoney wallet into THBT in a tap.</p>
+            </li>
+            <li class="story-card" data-x="106" data-y="289" data-w="74" data-h="74" data-r="12" data-zoom="1.2">
+              <h3 data-i18n="story.s5.title">Withdraw</h3>
+              <p data-i18n="story.s5.body">Change THBT back to baht whenever you want, always 1:1.</p>
+            </li>
+            <li class="story-card" data-x="196" data-y="289" data-w="74" data-h="74" data-r="12" data-zoom="1.2">
+              <h3 data-i18n="story.s6.title">Transfer</h3>
+              <p data-i18n="story.s6.body">Send THBT to friends, or to any Web3 wallet address.</p>
+            </li>
+            <li class="story-card" data-x="286" data-y="274" data-w="74" data-h="89" data-r="12" data-zoom="1.2">
+              <h3 data-i18n="story.s7.title">Swap</h3>
+              <p data-i18n="story.s7.body">Swap THBT for other stablecoins without leaving the app.</p>
+            </li>
+            <li class="story-card" data-x="16" data-y="408" data-w="314" data-h="135" data-r="16" data-zoom="1">
+              <h3 data-i18n="story.s8.title">Go global</h3>
+              <p data-i18n="story.s8.body">Swap to USDT, USDC, EURC, XSGD and AUDD.</p>
+            </li>
+            <li class="story-card" data-x="0" data-y="647" data-w="375" data-h="165" data-r="0" data-zoom="1">
+              <h3 data-i18n="story.s9.title">All in one place</h3>
+              <p data-i18n="story.s9.body">Track every token and what it's worth in baht, in one list.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="story-nav">
+          <div class="story-dots" role="group" aria-label="Jump to feature" data-i18n-attr="aria-label:story.dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--
+    Swap journey: a phone in the middle playing the real Baht Swap screens in order, like someone using it.
+    Images: assets/img/swap/web/*.jpg (web-sized copies of assets/img/swap/*.png).
+    Per screen: data-enter = how it appears (fade | sheet | push), data-hold = ms on screen,
+    data-tap-x / data-tap-y = where the finger taps (% of the screen) before moving on.
+  -->
+  <section class="swap-demo" aria-labelledby="swap-title">
+    <div class="swap-intro">
+      <span class="coin-anchor" data-coin-anchor aria-hidden="true"></span>
+      <!-- The coins you can swap to orbit the title, passing behind the text. -->
+      <div class="swap-orbit-stage">
+        <div class="swap-orbit" aria-hidden="true">
+          <div class="so-slot" style="--a:0deg"><div class="so-counter"><div class="so-face"><img src="assets/img/coins/usdt.svg" alt=""></div></div></div>
+          <div class="so-slot" style="--a:72deg"><div class="so-counter"><div class="so-face"><img src="assets/img/coins/usdc.svg" alt=""></div></div></div>
+          <div class="so-slot" style="--a:144deg"><div class="so-counter"><div class="so-face"><img src="assets/img/coins/eurc.svg" alt=""></div></div></div>
+          <div class="so-slot" style="--a:216deg"><div class="so-counter"><div class="so-face"><img src="assets/img/coins/xsgd.svg" alt=""></div></div></div>
+          <div class="so-slot" style="--a:288deg"><div class="so-counter"><div class="so-face"><img src="assets/img/coins/audd.svg" alt=""></div></div></div>
+        </div>
+        <h2 id="swap-title" data-i18n="swap.title">Swap in seconds</h2>
+      </div>
+      <p data-i18n="swap.sub">Watch a real swap in the TrueMoney app, start to finish.</p>
+    </div>
+
+    <div class="swap-phone">
+      <div class="swap-screen">
+          <img class="swap-shot" src="assets/img/swap/web/1.jpg" width="598" height="1300" alt="" data-enter="fade" data-hold="2400" data-tap-x="81" data-tap-y="44.6">
+          <img class="swap-shot" src="assets/img/swap/web/3.jpg" width="598" height="1300" alt="" data-enter="sheet" data-hold="2200" data-tap-x="25" data-tap-y="59">
+          <img class="swap-shot" src="assets/img/swap/web/4.jpg" width="598" height="1300" alt="" data-enter="fade" data-hold="2600" data-tap-x="50" data-tap-y="84">
+          <img class="swap-shot" src="assets/img/swap/web/5.jpg" width="598" height="1300" alt="" data-enter="sheet" data-hold="2200" data-tap-x="72" data-tap-y="88">
+          <img class="swap-shot" src="assets/img/swap/web/2.jpg" width="598" height="1300" alt="" data-enter="fade" data-hold="1400">
+          <img class="swap-shot" src="assets/img/swap/web/6.jpg" width="598" height="1300" alt="" data-enter="push" data-hold="3400">
+          <span class="swap-tap" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <ol class="swap-steps">
+      <li data-i18n="swap.s1">Open Baht Swap right inside TrueMoney.</li>
+      <li data-i18n="swap.s2">Pick the token you want: USDT, USDC, EURC, XSGD or AUDD.</li>
+      <li data-i18n="swap.s3">Enter how much THBT to swap and see exactly what you'll get.</li>
+      <li data-i18n="swap.s4">Review the details and confirm.</li>
+      <li data-i18n="swap.s5">Confirming on Base…</li>
+      <li data-i18n="swap.s6">Done. Your USDT is in your wallet.</li>
+    </ol>
+    <div class="swap-controls">
+      <div class="swap-dots" role="group" aria-label="Swap steps" data-i18n-attr="aria-label:swap.steps"></div>
+      <button type="button" class="swap-toggle" aria-pressed="false">
+        <span class="swap-toggle-pause" data-i18n="swap.pause">Pause</span>
+        <span class="swap-toggle-play" data-i18n="swap.play">Play</span>
+      </button>
+    </div>
+  </section>
+
+  <!--
+    FAQ: native <details> accordion (works without JS, keyboard and screen-reader friendly).
+    Copy: questions 1–5 of "FAQ THBT 2026" (14Mar26 THBT FAQ sheet). TH/EN official; RU/MY translated by Claude.
+  -->
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="faq-intro">
+      <h2 id="faq-title" data-i18n="faq.title">Frequently asked questions</h2>
+      <p data-i18n="faq.sub">Everything you need to know about THBT and your wallet.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span data-i18n="faq.q1">What is THBT?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-answer" data-i18n="faq.a1" data-i18n-html><p>THBT (Thai Baht TrueMoney) is a digital token issued by TrueMoney Co., Ltd. on the public Base blockchain, with its value pegged 1:1 to the Thai baht. Every THBT token issued is backed 100% by fiat currency securely held in bank accounts, with regular audits conducted to ensure transparency and stability.</p><p>THBT is a pilot project under the Programmable Payment testing in the Enhanced Regulatory Sandbox, operating from August 4, 2025, to December 31, 2026. The project is limited to 20,000 users throughout its duration, with a maximum issuing limit of 10,000 tokens per user per month.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.q2">Who is the issuer of THBT?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-answer" data-i18n="faq.a2" data-i18n-html><p>TrueMoney Co., Ltd. is the issuer of Thai Baht TrueMoney (THBT) under the Programmable Payment testing project in the Enhanced Regulatory Sandbox.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.q3">Which blockchain is THBT developed on?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-answer" data-i18n="faq.a3" data-i18n-html><p>THBT is developed on the Base chain, and has been fully audited by external assessors.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.q4">What is the value of THBT?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-answer" data-i18n="faq.a4" data-i18n-html><p>1 THBT is equivalent to 1 Thai baht.</p><p>Once users successfully register for the THBT service, they can issue or withdraw THBT via the TrueMoney app. During this pilot period, the company will not charge any fees. When withdrawing THBT, users will receive the full amount back in Thai baht based on the quantity of THBT they wish to withdraw.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.q5">Where can THBT be used, and who is eligible to use it?</span><span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-answer" data-i18n="faq.a5" data-i18n-html><p>Users can issue or withdraw THBT tokens via the TrueMoney application. Registration for the service is available from August 4, 2025, to December 31, 2026. Please note that the total number of users throughout the project is limited to 20,000.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <footer class="end">
+    <p data-i18n="footer.note">More sections coming in M1.</p>
+  </footer>
+  <!--
+    Travelling THBT coin: drifts down the page behind the content, resting above the hero headline,
+    then above "Our Service", then above "Swap in seconds" (the [data-coin-anchor] spots, in page order).
+    See assets/js/coin-travel.js. Hidden for reduced motion / no JS; the anchors show a still coin instead.
+  -->
+  <div class="coin-traveler" aria-hidden="true"><img src="assets/img/coins/thbt.svg" alt=""></div>
+</body>
+</html>

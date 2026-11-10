@@ -1,23 +1,43 @@
 # THBT landing page demo
 
-Internal demo of the THBT branding landing page. Static Next.js export served from GitHub Pages at
+Internal demo of the THBT branding landing page. Plain HTML + CSS, no build step, served from GitHub Pages at
 https://kwanchanal.github.io/thbt-demo/
+
+## Structure
+
+```
+index.html
+assets/css/styles.css   # design tokens are CSS custom properties in :root
+assets/img/                # wallet screen, coins/
+assets/js/                 # i18n.js, hero3d.js, stats.js, story.js
+assets/i18n/               # th.js, ru.js, my.js translations
+.nojekyll
+.github/workflows/deploy.yml
+```
 
 ## Run locally
 
+Open `index.html` with VS Code Live Server, or:
+
 ```bash
-npm ci
-npm run dev        # http://localhost:3000 (no base path in dev)
-npm run build      # static export to ./out with base path /thbt-demo
+python3 -m http.server 8000   # http://localhost:8000
 ```
 
 ## Deploy
 
-Every push to `main` runs `.github/workflows/deploy.yml`, which builds and publishes `./out` to GitHub Pages.
+Every push to `main` runs `.github/workflows/deploy.yml`, which publishes the repo as-is to GitHub Pages.
 One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Languages (EN / TH / RU / MY)
+
+- English is written directly in `index.html`. It is the default and the fallback for anything not translated.
+- Translations live in `assets/i18n/th.js`, `ru.js`, `my.js`. Each key has the English text in a comment above it; fill in the `""`. Empty strings fall back to English.
+- When a language is finished, set `ready: true` for it in `assets/js/i18n.js` to enable its button.
+- Preview any language before it's ready with `?lang=th` (or `ru`, `my`).
+- Adding new text: put `data-i18n="section.key"` on the element (add `data-i18n-html` if it contains markup), or `data-i18n-attr="alt:section.key"` for attributes, then add the same key to each language file.
+- Thai and Myanmar load Noto Sans Thai / Noto Sans Myanmar from Google Fonts only when chosen.
 
 ## Rules
 
-- Reference files in `public/` with `withBase('/file.ext')` from `src/lib/withBase.ts` — never hard-code `/file.ext`.
-- `public/.nojekyll` must stay so GitHub Pages serves the `_next/` folder.
+- Always use relative paths (`assets/...`), never paths starting with `/` — the site lives under `/thbt-demo/`.
 - The demo is `noindex` and labelled "Demo" until legal sign-off.
