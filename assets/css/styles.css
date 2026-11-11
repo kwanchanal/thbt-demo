@@ -1652,6 +1652,19 @@ body:lang(my) {
   z-index: 1;
 }
 
+/* Clip sideways overflow on every section, not only on <html>.
+   iPhone Safari measures 3D-transformed pieces (the tilted phone, the orbiting coins) more generously,
+   and anything poking past the screen edge lets the whole page zoom out ("shrinks" on pinch). */
+.hero,
+.stats,
+.story,
+.swap-demo,
+.faq,
+.end,
+.site-header {
+  overflow-x: clip;
+}
+
 .coin-traveler {
   display: none;
   position: fixed;
