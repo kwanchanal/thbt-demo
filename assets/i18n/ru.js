@@ -4,17 +4,11 @@
 // When this file is done, set ready: true for "ru" in assets/js/i18n.js.
 window.THBT_I18N = window.THBT_I18N || {};
 window.THBT_I18N.ru = {
-  // THBT — Thai baht, upgraded (Demo)
-  "meta.title": "THBT — тайский бат нового уровня (демо)",
+  // THBT — Thai Baht TrueMoney (Demo)
+  "meta.title": "THBT — Thai Baht TrueMoney (демо)",
 
-  // DEMO
-  "hero.badge": "ДЕМО",
-
-  // Thai baht, <span class="brand">upgraded.</span>
-  "hero.title": "Тайский бат <span class=\"brand\">нового уровня.</span>",
-
-  // 1 THBT = 1 THB — instant, onchain, inside TrueMoney.
-  "hero.lead": "1 THBT = 1 THB — мгновенно, в блокчейне, прямо в TrueMoney.",
+  // The easiest way to hold baht onchain.
+  "hero.lead": "Самый простой способ хранить баты в блокчейне.",
 
   // Scroll to explore
   "hero.scroll": "Листайте вниз",
@@ -182,5 +176,8 @@ window.THBT_I18N.ru = {
   "story.next": "Следующая функция",
 
   // Our Service
-  "story.title": "Наш сервис"
+  "story.title": "Наш сервис",
+
+  // Programmable Payment Program
+  "header.title": "Программа Programmable Payment"
 };

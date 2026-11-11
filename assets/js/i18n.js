@@ -84,21 +84,63 @@
     document.head.appendChild(script);
   }
 
-  // Switcher
+  // Switcher: a toggle ("🌐 English ▾") that opens a menu of full language names.
   const nav = document.querySelector(".lang-switch");
+  const GLOBE =
+    '<svg class="lang-globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">' +
+    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>';
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "lang-toggle";
+  toggle.setAttribute("aria-haspopup", "true");
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.innerHTML =
+    GLOBE + '<span class="lang-current"></span><span class="lang-current-name"></span><span class="lang-caret" aria-hidden="true">▾</span>';
+  const menu = document.createElement("div");
+  menu.className = "lang-menu";
+  if (nav) nav.append(toggle, menu);
+
   const buttons = LANGS.map((lang) => {
     const b = document.createElement("button");
     b.type = "button";
     b.dataset.lang = lang.code;
     b.lang = lang.code;
-    b.textContent = lang.label;
+    b.innerHTML = '<span class="lang-short"></span><span class="lang-name"></span>';
+    b.querySelector(".lang-short").textContent = lang.label;
+    b.querySelector(".lang-name").textContent = lang.name;
     b.title = lang.ready ? lang.name : lang.name + " — coming soon";
     b.setAttribute("aria-label", lang.name);
     b.disabled = !lang.ready;
-    b.addEventListener("click", () => setLang(lang.code));
-    if (nav) nav.appendChild(b);
+    b.addEventListener("click", () => {
+      setLang(lang.code);
+      setOpen(false);
+    });
+    menu.appendChild(b);
     return b;
   });
+
+  function setOpen(open) {
+    if (!nav) return;
+    nav.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+  }
+  toggle.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
+  document.addEventListener("click", (e) => {
+    if (nav && !nav.contains(e.target)) setOpen(false);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav && nav.classList.contains("is-open")) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  document.addEventListener("thbt:langchange", (e) => {
+    const lang = byCode[e.detail.lang];
+    toggle.querySelector(".lang-current").textContent = lang.label;
+    toggle.querySelector(".lang-current-name").textContent = lang.name;
+    toggle.setAttribute("aria-label", "Language: " + lang.name);
+  });
+
 
   // Starting language: ?lang= → remembered choice → browser language (if ready) → English.
   function initial() {

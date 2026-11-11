@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="meta.title">THBT — Thai baht, upgraded (Demo)</title>
+  <title data-i18n="meta.title">THBT — Thai Baht TrueMoney (Demo)</title>
   <meta name="description" content="Internal demo of the THBT branding landing page." data-i18n-attr="content:meta.description">
   <!-- Demo only: keep out of search until legal sign-off. -->
   <meta name="robots" content="noindex, nofollow">
   <!-- Always use relative paths (no leading "/") so the site works under /thbt-demo/. -->
-  <link rel="icon" href="assets/img/coin.svg" type="image/svg+xml">
+  <!-- Favicon: THBT coin from Figma (29:5126). PNG fallback for browsers without SVG favicons. -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-128.png" type="image/png" sizes="128x128">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/header.js" defer></script>
   <script src="assets/js/hero3d.js" defer></script>
   <script src="assets/js/story.js" defer></script>
   <script src="assets/js/stats.js" defer></script>
@@ -18,16 +21,21 @@
   <script src="assets/js/coin-travel.js" defer></script>
 </head>
 <body>
-  <!-- Language switcher: buttons are built by assets/js/i18n.js from its LANGS list. -->
-  <nav class="lang-switch" aria-label="Language" data-i18n-attr="aria-label:lang.label"></nav>
+  <!-- Site header: stays at the top; transparent over the hero, white once you scroll (assets/js/header.js).
+       Programme name on the left, language switcher (built by assets/js/i18n.js) on the far right. -->
+  <header class="site-header">
+    <p class="site-title" data-i18n="header.title">Programmable Payment Program</p>
+    <nav class="lang-switch" aria-label="Language" data-i18n-attr="aria-label:lang.label"></nav>
+  </header>
 
-  <header class="hero">
+  <section class="hero">
+    <!-- First stop of the travelling THBT coin: big, between the text and the phone. -->
+    <span class="coin-anchor hero-coin" data-coin-anchor aria-hidden="true"></span>
+
     <div class="hero-copy">
-      <span class="badge" data-i18n="hero.badge">DEMO</span>
-      <span class="coin-anchor" data-coin-anchor aria-hidden="true"></span>
-      <h1 data-i18n="hero.title" data-i18n-html>Thai baht, <span class="brand">upgraded.</span></h1>
-      <p data-i18n="hero.lead">1 THBT = 1 THB — instant, onchain, inside TrueMoney.</p>
-      <a class="scroll-hint" href="#features"><span data-i18n="hero.scroll">Scroll to explore</span> <span aria-hidden="true">↓</span></a>
+      <h1 class="hero-title">THBT</h1>
+      <p class="hero-name">Thai Baht TrueMoney</p>
+      <p class="hero-lead" data-i18n="hero.lead">The easiest way to hold baht onchain.</p>
     </div>
 
     <!--
@@ -87,7 +95,9 @@
         </div>
       </div>
     </div>
-  </header>
+
+    <a class="scroll-hint" href="#features"><span data-i18n="hero.scroll">Scroll to explore</span> <span aria-hidden="true">↓</span></a>
+  </section>
 
   <!--
     Key numbers. Values live in STATS in assets/js/stats.js (swap that for an API call later).

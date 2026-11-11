@@ -31,7 +31,8 @@
     // Anchor centres in page coordinates, and the scroll position where each one "arrives".
     const pts = anchors.map((a) => {
       const r = a.getBoundingClientRect();
-      return { x: r.left + r.width / 2 + sx, y: r.top + r.height / 2 + sy, size: r.width };
+      // Centre from the box (rotation doesn't move it); size from offsetWidth (rotation would inflate the box).
+      return { x: r.left + r.width / 2 + sx, y: r.top + r.height / 2 + sy, size: a.offsetWidth };
     });
     const stops = pts.map((p) => p.y - vh * REST);
     stops[0] = Math.max(0, stops[0]); // at the very top of the page the coin sits exactly on the first anchor

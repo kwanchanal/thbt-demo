@@ -4,17 +4,11 @@
 // When this file is done, set ready: true for "my" in assets/js/i18n.js.
 window.THBT_I18N = window.THBT_I18N || {};
 window.THBT_I18N.my = {
-  // THBT — Thai baht, upgraded (Demo)
-  "meta.title": "THBT — အဆင့်မြှင့်ထားသော ထိုင်းဘတ် (Demo)",
+  // THBT — Thai Baht TrueMoney (Demo)
+  "meta.title": "THBT — Thai Baht TrueMoney (Demo)",
 
-  // DEMO
-  "hero.badge": "DEMO",
-
-  // Thai baht, <span class="brand">upgraded.</span>
-  "hero.title": "ထိုင်းဘတ်၊ <span class=\"brand\">အဆင့်မြှင့်ပြီ။</span>",
-
-  // 1 THBT = 1 THB — instant, onchain, inside TrueMoney.
-  "hero.lead": "1 THBT = 1 THB — ချက်ချင်း၊ blockchain ပေါ်တွင်၊ TrueMoney ထဲမှာပဲ။",
+  // The easiest way to hold baht onchain.
+  "hero.lead": "ဘတ်ငွေကို blockchain ပေါ်တွင် ကိုင်ဆောင်ရန် အလွယ်ကူဆုံး နည်းလမ်း။",
 
   // Scroll to explore
   "hero.scroll": "ဆက်ကြည့်ရန် အောက်သို့ ဆွဲချပါ",
@@ -182,5 +176,8 @@ window.THBT_I18N.my = {
   "story.next": "နောက် လုပ်ဆောင်ချက်",
 
   // Our Service
-  "story.title": "ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှု"
+  "story.title": "ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှု",
+
+  // Programmable Payment Program
+  "header.title": "Programmable Payment အစီအစဉ်"
 };
