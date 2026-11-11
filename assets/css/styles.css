@@ -1619,6 +1619,11 @@ body:lang(my) {
 
 /* Phones: the coin sits in the flow, centred above THBT. */
 @media (max-width: 799px) {
+  /* Every stop is the same size on phones, so the coin never resizes while it travels. */
+  .coin-anchor {
+    --coin-size: 112px;
+  }
+
   .hero .hero-coin {
     --coin-size: 112px;
     position: static;

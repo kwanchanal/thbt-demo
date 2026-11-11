@@ -47,7 +47,8 @@
     const x = lerp(a.x, b.x, t) - sx;
     const y = lerp(a.y, b.y, t) - sy;
     // Full size on each stop, a little smaller in between.
-    const size = lerp(a.size, b.size, t) * (1 - SHRINK * Math.sin(raw * Math.PI));
+    // Phones: one fixed size the whole way. Desktop: full size on each stop, a little smaller in between.
+    const size = isPhone.matches ? pts[0].size : lerp(a.size, b.size, t) * (1 - SHRINK * Math.sin(raw * Math.PI));
     // A little tilt while it's travelling, flat when it's resting on an anchor.
     const tilt = Math.sin(raw * Math.PI) * 18;
     // Phones: also swing the coin round in 3D (one way, then back) between stops.
