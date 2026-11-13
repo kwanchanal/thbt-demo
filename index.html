@@ -142,7 +142,26 @@
         </dl>
         </div>
         <div class="trust-phone" aria-hidden="true">
-          <img src="assets/img/thbt-onboarding.png" width="375" height="812" alt="">
+          <!--
+            The THBT onboarding screen (Figma Stable-coin 10231:16043), rebuilt in layers so it can move:
+            the dashed rings turn (rings.svg animates itself), the coins float. Positions are % of the
+            376×282 illustration area, taken from Figma.
+          -->
+          <div class="tp-screen">
+            <img class="tp-base" src="assets/img/onboarding/screen.png" width="375" height="812" alt="">
+            <div class="tp-art">
+              <img class="tp-rings" src="assets/img/onboarding/rings.svg" alt="">
+              <img class="tp-wallet" src="assets/img/onboarding/wallet.png" alt="" style="left:24.67%;top:54.85%;width:48.79%">
+              <img class="tp-thbt" src="assets/img/onboarding/thbt.png" alt="" style="left:51.54%;top:36.88%;width:25.00%">
+              <img class="tp-coin" src="assets/img/onboarding/c1.png" alt="" style="left:15.84%;top:9.39%;width:11.27%;--d:-0.3s">
+              <img class="tp-coin" src="assets/img/onboarding/c2.png" alt="" style="left:25.47%;top:35.79%;width:11.71%;--d:-1.1s">
+              <img class="tp-coin" src="assets/img/onboarding/c3.png" alt="" style="left:0.00%;top:41.37%;width:18.70%;--d:-2.2s">
+              <img class="tp-coin" src="assets/img/onboarding/c4.png" alt="" style="left:43.05%;top:14.61%;width:12.10%;--d:-0.7s">
+              <img class="tp-coin" src="assets/img/onboarding/c5.png" alt="" style="left:55.79%;top:1.06%;width:10.98%;--d:-1.8s">
+              <img class="tp-coin" src="assets/img/onboarding/c6.png" alt="" style="left:82.88%;top:19.29%;width:10.91%;--d:-2.6s">
+              <img class="tp-coin" src="assets/img/onboarding/c7.png" alt="" style="left:82.39%;top:43.82%;width:11.74%;--d:-1.4s">
+            </div>
+          </div>
         </div>
       </div>
     </section>

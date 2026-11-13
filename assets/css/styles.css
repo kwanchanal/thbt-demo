@@ -636,17 +636,65 @@ img {
   min-height: 340px;
 }
 
-.trust-phone img {
+.tp-screen {
   position: absolute;
   top: clamp(2rem, 3.5vw, 3rem);
   left: 50%;
   translate: -50% 0;
   width: min(270px, 90%);
-  height: auto;
+  aspect-ratio: 375 / 812;
+  overflow: hidden;
   border: 8px solid #111113;
   border-radius: 42px;
   background: #fff;
   box-shadow: 0 30px 60px -24px rgba(22, 22, 26, 0.45);
+}
+
+.tp-base {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The illustration area of the screen: y 95–377, 376 wide, in the 375×812 frame. */
+.tp-art {
+  position: absolute;
+  left: 0;
+  top: calc(95 / 812 * 100%);
+  width: calc(376 / 375 * 100%);
+  height: calc(282 / 812 * 100%);
+  overflow: hidden;
+}
+
+.tp-art img {
+  position: absolute;
+  height: auto;
+}
+
+.tp-rings {
+  inset: 0;
+  width: 100%;
+}
+
+/* Coins float gently, each on its own beat; the big THBT coin rocks a little too. */
+.tp-coin {
+  animation: tp-float 3.4s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+
+.tp-thbt {
+  animation: tp-rock 4.2s ease-in-out infinite;
+  transform-origin: 50% 80%;
+}
+
+@keyframes tp-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9%) rotate(-5deg); }
+}
+
+@keyframes tp-rock {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-5%) rotate(4deg); }
 }
 
 .trust-main {
@@ -2136,6 +2184,8 @@ body:lang(my) {
     transition: none;
   }
 
+  .tp-coin,
+  .tp-thbt,
   .spot::before,
   .hero-float,
   .p3-pop-face,
@@ -2223,7 +2273,7 @@ body:lang(my) {
   border-top-color: rgba(255, 255, 255, 0.14);
 }
 
-[data-trust="navy"] .trust-phone img {
+[data-trust="navy"] .tp-screen {
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
 }
 
