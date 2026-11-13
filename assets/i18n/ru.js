@@ -7,12 +7,6 @@ window.THBT_I18N.ru = {
   // THBT — Thai Baht TrueMoney (Demo)
   "meta.title": "THBT — Thai Baht TrueMoney (демо)",
 
-  // The easiest way to hold baht onchain.
-  "hero.lead": "Самый простой способ хранить баты в блокчейне.",
-
-  // Scroll to explore
-  "hero.scroll": "Листайте вниз",
-
   // Your baht, onchain
   "story.s1.title": "Ваш бат в блокчейне",
 
@@ -67,8 +61,6 @@ window.THBT_I18N.ru = {
   // Track every token and what it's worth in baht, in one list.
   "story.s9.body": "Все токены и их стоимость в батах — в одном списке.",
 
-  // More sections coming in M1.
-  "footer.note": "Другие разделы появятся в M1.",
 
   // Internal demo of the THBT branding landing page.
   "meta.description": "Внутренняя демоверсия лендинга бренда THBT.",
@@ -87,24 +79,6 @@ window.THBT_I18N.ru = {
 
   // Jump to feature
   "story.dots": "Перейти к функции",
-
-  // THBT in numbers
-  "stats.title": "THBT в цифрах",
-
-  // Circulating supply
-  "stats.supply": "В обращении",
-
-  // Market cap
-  "stats.mcap": "Рыночная капитализация",
-
-  // Fully diluted valuation
-  "stats.fdv": "Полностью разводнённая оценка",
-
-  // 24h trading volume
-  "stats.volume": "Объём торгов за 24 ч",
-
-  // Illustrative figures for the demo, not live data.
-  "stats.note": "Примерные данные для демо, не в реальном времени.",
 
   // Frequently asked questions
   "faq.title": "Частые вопросы",
@@ -139,9 +113,6 @@ window.THBT_I18N.ru = {
   // Swap in seconds
   "swap.title": "Обмен за секунды",
 
-  // Watch a real swap in the TrueMoney app, start to finish.
-  "swap.sub": "Посмотрите реальный обмен в приложении TrueMoney от начала до конца.",
-
   // Open Baht Swap right inside TrueMoney.
   "swap.s1": "Откройте Baht Swap прямо в TrueMoney.",
 
@@ -160,24 +131,123 @@ window.THBT_I18N.ru = {
   // Done. Your USDT is in your wallet.
   "swap.s6": "Готово. USDT уже в вашем кошельке.",
 
-  // Swap steps
-  "swap.steps": "Шаги обмена",
-
-  // Pause
-  "swap.pause": "Пауза",
-
-  // Play
-  "swap.play": "Играть",
-
-  // Previous feature
-  "story.prev": "Предыдущая функция",
-
-  // Next feature
-  "story.next": "Следующая функция",
-
   // Our Service
   "story.title": "Наш сервис",
 
   // Programmable Payment Program
-  "header.title": "Программа Programmable Payment"
+  "header.title": "Программа Programmable Payment",
+
+  // ---- Redesign (Figma comments 2026-11-13): hero, trust box, Why THBT, swap tutorial ----
+
+  // Connecting currencies easier than ever
+  "hero.lead": "Обмен валют проще, чем когда-либо",
+
+  // THBT (Thai Baht TrueMoney) is a digital token issued by TrueMoney Co., Ltd. on the public Base blockchain, with its value pegged 1:1 to the Thai baht. Every THBT token issued is backed 100% by fiat currency securely held in bank accounts, with regular audits conducted to ensure transparency and stability.
+  "hero.about": "THBT (Thai Baht TrueMoney) — цифровой токен, выпускаемый компанией TrueMoney Co., Ltd. в публичном блокчейне Base, стоимость которого привязана к тайскому бату в соотношении 1:1. Каждый выпущенный THBT на 100% обеспечен фиатными средствами, надёжно хранящимися на банковских счетах; для прозрачности и стабильности регулярно проводятся проверки резервов.",
+  // Expanded to 6 token swaps
+  "hero.tokens": "Теперь обмен на 6 токенов",
+  // See how it works
+  "hero.cta": "Как это работает",
+  // A regulated pilot
+  "trust.title": "Регулируемый пилотный проект",
+  // THBT service is operated by True Money Co., Ltd. under the Bank of Thailand's (BOT) Enhanced Regulatory Sandbox for Programmable Payments. Users can purchase digital coupons or swap THBT for other participating digital tokens through Ascend Bit Co., Ltd., which operates under the Digital Asset Regulatory Sandbox of the Securities and Exchange Commission (SEC), Thailand.
+  "trust.body": "Сервис THBT предоставляет компания True Money Co., Ltd. в рамках Enhanced Regulatory Sandbox Банка Таиланда (BOT) для программируемых платежей. Пользователи могут покупать цифровые купоны или обменивать THBT на другие участвующие цифровые токены через Ascend Bit Co., Ltd., которая работает в рамках Digital Asset Regulatory Sandbox Комиссии по ценным бумагам и биржам Таиланда (SEC).",
+  // Pilot period
+  "trust.periodLabel": "Срок пилота",
+  // Today – 31 Dec 2026
+  "trust.period": "Сегодня – 31 дек. 2026",
+  // Participants
+  "trust.usersLabel": "Участники",
+  // Limited to 20,000
+  "trust.users": "Не более 20 000",
+  // Issuance limit
+  "trust.limitLabel": "Лимит выпуска",
+  // 10,000 THBT per user per month
+  "trust.limit": "10 000 THBT на пользователя в месяц",
+  // Why THBT
+  "why.title": "Почему THBT",
+  // A stable digital baht, built into the TrueMoney app.
+  "why.sub": "Стабильный цифровой бат прямо в приложении TrueMoney.",
+  // Your tokens, in TrueMoney
+  "why.wallet.title": "Ваши токены в TrueMoney",
+  // Manage your tokens easily with the digital wallet in the TrueMoney app.
+  "why.wallet.body": "Легко управляйте токенами в цифровом кошельке приложения TrueMoney.",
+  // Stable value
+  "why.stable.title": "Стабильная стоимость",
+  // Pegged to the Thai baht, so it doesn't swing up and down like other crypto.
+  "why.stable.body": "Привязан к тайскому бату, поэтому не скачет, как обычная криптовалюта.",
+  // Safe and trusted
+  "why.safe.title": "Надёжно и безопасно",
+  // Backed 100% by Thai baht.
+  "why.safe.body": "Обеспечен тайским батом на 100%.",
+  // A digital token
+  "why.token.title": "Цифровой токен",
+  // Hold value, withdraw, transfer or redeem coupons on the blockchain.
+  "why.token.body": "Храните, выводите, переводите или обменивайте на купоны в блокчейне.",
+  // Easy to use
+  "why.easy.title": "Просто и удобно",
+  // Connect TrueMoney once and start using it right away.
+  "why.easy.body": "Подключите TrueMoney один раз и пользуйтесь сразу.",
+  // Swap across 6 tokens
+  "why.swap.title": "Обмен на 6 токенов",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB.
+  "why.swap.body": "Обменивайте на токены, привязанные к USD, EUR, SGD, AUD и THB.",
+  // Up to
+  "why.coupon.upto": "До",
+  // Discounted coupons
+  "why.coupon.title": "Купоны со скидкой",
+  // Use THBT to buy coupons at up to 50% off.
+  "why.coupon.body": "Покупайте купоны за THBT со скидкой до 50%.",
+  // Follow the steps to see how a swap works in the TrueMoney app.
+  "swap.sub": "Пройдите по шагам и посмотрите, как работает обмен в приложении TrueMoney.",
+  // Back
+  "swap.prev": "Назад",
+  // Next
+  "swap.next": "Далее",
+  // Start again
+  "swap.restart": "Сначала",
+  // Next step
+  "swap.tapLabel": "Следующий шаг",
+
+  // ---- News (Stay in the loop) and closing Support banner ----
+
+  // Stay in the loop
+  "news.title": "Будьте в курсе",
+  // News, product updates and guides from the THBT team.
+  "news.sub": "Новости, обновления и руководства от команды THBT.",
+  // Product update
+  "news.tagUpdate": "Обновление",
+  // Guide
+  "news.tagGuide": "Руководство",
+  // Now swap THBT with 6 tokens
+  "news.n1.title": "Теперь обмен THBT на 6 токенов",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB, right in TrueMoney.
+  "news.n1.body": "Обменивайте на токены, привязанные к USD, EUR, SGD, AUD и THB, прямо в TrueMoney.",
+  // How to swap THBT in the TrueMoney app
+  "news.n2.title": "Как обменять THBT в приложении TrueMoney",
+  // A step-by-step walkthrough, from opening Baht Swap to getting your tokens.
+  "news.n2.body": "Пошаговая инструкция: от открытия Baht Swap до получения токенов.",
+  // THBT explained: your baht, onchain
+  "news.n3.title": "Что такое THBT: ваши баты в блокчейне",
+  // What THBT is, who issues it, and how every token is backed 1:1 by Thai baht.
+  "news.n3.body": "Что такое THBT, кто его выпускает и как каждый токен обеспечен батом 1:1.",
+  // Discounted coupons with THBT
+  "news.n4.title": "Купоны со скидкой за THBT",
+  // Use THBT to buy digital coupons at up to 50% off.
+  "news.n4.body": "Покупайте цифровые купоны за THBT со скидкой до 50%.",
+  // Need a hand with THBT?
+  "cta.title": "Нужна помощь с THBT?",
+  // Questions about your wallet, swaps or coupons? Our support team is here to help.
+  "cta.body": "Вопросы о кошельке, обмене или купонах? Наша служба поддержки готова помочь.",
+  // Go to Support
+  "cta.button": "Перейти в поддержку",
+
+  // Previous
+  "news.prev": "Назад",
+
+  // Next
+  "news.next": "Далее",
+
+  // How to
+  "swap.eyebrow": "Как это сделать"
 };

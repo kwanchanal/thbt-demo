@@ -7,12 +7,6 @@ window.THBT_I18N.my = {
   // THBT — Thai Baht TrueMoney (Demo)
   "meta.title": "THBT — Thai Baht TrueMoney (Demo)",
 
-  // The easiest way to hold baht onchain.
-  "hero.lead": "ဘတ်ငွေကို blockchain ပေါ်တွင် ကိုင်ဆောင်ရန် အလွယ်ကူဆုံး နည်းလမ်း။",
-
-  // Scroll to explore
-  "hero.scroll": "ဆက်ကြည့်ရန် အောက်သို့ ဆွဲချပါ",
-
   // Your baht, onchain
   "story.s1.title": "သင့်ဘတ်ငွေ blockchain ပေါ်တွင်",
 
@@ -67,8 +61,6 @@ window.THBT_I18N.my = {
   // Track every token and what it's worth in baht, in one list.
   "story.s9.body": "token အားလုံးနှင့် ၎င်းတို့၏ ဘတ်တန်ဖိုးကို စာရင်းတစ်ခုတည်းတွင် ကြည့်ပါ။",
 
-  // More sections coming in M1.
-  "footer.note": "နောက်ထပ်အပိုင်းများ M1 တွင် လာပါမည်။",
 
   // Internal demo of the THBT branding landing page.
   "meta.description": "THBT branding landing page ၏ အတွင်းပိုင်း demo။",
@@ -87,24 +79,6 @@ window.THBT_I18N.my = {
 
   // Jump to feature
   "story.dots": "လုပ်ဆောင်ချက်သို့ သွားရန်",
-
-  // THBT in numbers
-  "stats.title": "ကိန်းဂဏန်းများဖြင့် THBT",
-
-  // Circulating supply
-  "stats.supply": "လည်ပတ်နေသော ပမာဏ",
-
-  // Market cap
-  "stats.mcap": "စျေးကွက်တန်ဖိုး",
-
-  // Fully diluted valuation
-  "stats.fdv": "အပြည့်အဝ ထုတ်ပြီးချိန် တန်ဖိုး (FDV)",
-
-  // 24h trading volume
-  "stats.volume": "၂၄ နာရီ အရောင်းအဝယ် ပမာဏ",
-
-  // Illustrative figures for the demo, not live data.
-  "stats.note": "demo အတွက် နမူနာ ကိန်းဂဏန်းများသာ ဖြစ်ပြီး တိုက်ရိုက်ဒေတာ မဟုတ်ပါ။",
 
   // Frequently asked questions
   "faq.title": "မကြာခဏ မေးလေ့ရှိသော မေးခွန်းများ",
@@ -139,9 +113,6 @@ window.THBT_I18N.my = {
   // Swap in seconds
   "swap.title": "စက္ကန့်ပိုင်းအတွင်း လဲလှယ်ပါ",
 
-  // Watch a real swap in the TrueMoney app, start to finish.
-  "swap.sub": "TrueMoney app ထဲတွင် အမှန်တကယ် လဲလှယ်ပုံကို အစမှအဆုံး ကြည့်ပါ။",
-
   // Open Baht Swap right inside TrueMoney.
   "swap.s1": "TrueMoney ထဲမှာပဲ Baht Swap ကို ဖွင့်ပါ။",
 
@@ -160,24 +131,123 @@ window.THBT_I18N.my = {
   // Done. Your USDT is in your wallet.
   "swap.s6": "ပြီးပါပြီ။ သင့် USDT သည် wallet ထဲသို့ ရောက်ပါပြီ။",
 
-  // Swap steps
-  "swap.steps": "လဲလှယ်ရန် အဆင့်များ",
-
-  // Pause
-  "swap.pause": "ခဏရပ်",
-
-  // Play
-  "swap.play": "ဖွင့်",
-
-  // Previous feature
-  "story.prev": "ယခင် လုပ်ဆောင်ချက်",
-
-  // Next feature
-  "story.next": "နောက် လုပ်ဆောင်ချက်",
-
   // Our Service
   "story.title": "ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှု",
 
   // Programmable Payment Program
-  "header.title": "Programmable Payment အစီအစဉ်"
+  "header.title": "Programmable Payment အစီအစဉ်",
+
+  // ---- Redesign (Figma comments 2026-11-13): hero, trust box, Why THBT, swap tutorial ----
+
+  // Connecting currencies easier than ever
+  "hero.lead": "ငွေကြေးများကို ယခင်ကထက် ပိုမိုလွယ်ကူစွာ ချိတ်ဆက်ပါ",
+
+  // THBT (Thai Baht TrueMoney) is a digital token issued by TrueMoney Co., Ltd. on the public Base blockchain, with its value pegged 1:1 to the Thai baht. Every THBT token issued is backed 100% by fiat currency securely held in bank accounts, with regular audits conducted to ensure transparency and stability.
+  "hero.about": "THBT (Thai Baht TrueMoney) သည် TrueMoney Co., Ltd. မှ အများသုံး Base blockchain ပေါ်တွင် ထုတ်ဝေသော ဒစ်ဂျစ်တယ် token ဖြစ်ပြီး ၎င်း၏တန်ဖိုးကို ထိုင်းဘတ်နှင့် 1:1 ချိတ်ဆက်ထားသည်။ ထုတ်ဝေသော THBT တိုင်းကို ဘဏ်အကောင့်များတွင် လုံခြုံစွာ ထိန်းသိမ်းထားသော ငွေကြေးဖြင့် 100% အာမခံထားပြီး ပွင့်လင်းမြင်သာမှုနှင့် တည်ငြိမ်မှုရှိစေရန် ပုံမှန် စစ်ဆေးမှုများ ပြုလုပ်ပါသည်။",
+  // Expanded to 6 token swaps
+  "hero.tokens": "တိုကင် 6 မျိုးအထိ လဲလှယ်နိုင်ပါပြီ",
+  // See how it works
+  "hero.cta": "အသုံးပြုပုံ ကြည့်ရန်",
+  // A regulated pilot
+  "trust.title": "စည်းကမ်းထိန်းချုပ်မှုအောက်ရှိ စမ်းသပ်စီမံကိန်း",
+  // THBT service is operated by True Money Co., Ltd. under the Bank of Thailand's (BOT) Enhanced Regulatory Sandbox for Programmable Payments. Users can purchase digital coupons or swap THBT for other participating digital tokens through Ascend Bit Co., Ltd., which operates under the Digital Asset Regulatory Sandbox of the Securities and Exchange Commission (SEC), Thailand.
+  "trust.body": "THBT ဝန်ဆောင်မှုကို True Money Co., Ltd. က ထိုင်းနိုင်ငံတော်ဘဏ် (BOT) ၏ Programmable Payments အတွက် Enhanced Regulatory Sandbox အောက်တွင် လုပ်ဆောင်ပါသည်။ အသုံးပြုသူများသည် ဒစ်ဂျစ်တယ်ကူပွန်များ ဝယ်ယူနိုင်ပြီး THBT ကို ပါဝင်သော အခြားဒစ်ဂျစ်တယ်တိုကင်များနှင့် Ascend Bit Co., Ltd. မှတစ်ဆင့် လဲလှယ်နိုင်ပါသည်။ Ascend Bit Co., Ltd. သည် ထိုင်းနိုင်ငံ စတော့ရှယ်ယာနှင့် လဲလှယ်ရေးကော်မရှင် (SEC) ၏ Digital Asset Regulatory Sandbox အောက်တွင် လုပ်ဆောင်ပါသည်။",
+  // Pilot period
+  "trust.periodLabel": "စမ်းသပ်ကာလ",
+  // Today – 31 Dec 2026
+  "trust.period": "ယနေ့ – 2026 ဒီဇင်ဘာ 31",
+  // Participants
+  "trust.usersLabel": "ပါဝင်သူများ",
+  // Limited to 20,000
+  "trust.users": "20,000 ဦးအထိသာ",
+  // Issuance limit
+  "trust.limitLabel": "ထုတ်ယူနိုင်မှု ကန့်သတ်ချက်",
+  // 10,000 THBT per user per month
+  "trust.limit": "တစ်ဦးလျှင် တစ်လ 10,000 THBT",
+  // Why THBT
+  "why.title": "THBT ကို ဘာကြောင့် ရွေးသင့်သလဲ",
+  // A stable digital baht, built into the TrueMoney app.
+  "why.sub": "TrueMoney အက်ပ်ထဲရှိ တည်ငြိမ်သော ဒစ်ဂျစ်တယ်ဘတ်။",
+  // Your tokens, in TrueMoney
+  "why.wallet.title": "TrueMoney ထဲက သင့်တိုကင်များ",
+  // Manage your tokens easily with the digital wallet in the TrueMoney app.
+  "why.wallet.body": "TrueMoney အက်ပ်ရှိ ဒစ်ဂျစ်တယ်ပိုက်ဆံအိတ်ဖြင့် သင့်တိုကင်များကို လွယ်ကူစွာ စီမံပါ။",
+  // Stable value
+  "why.stable.title": "တည်ငြိမ်သော တန်ဖိုး",
+  // Pegged to the Thai baht, so it doesn't swing up and down like other crypto.
+  "why.stable.body": "ထိုင်းဘတ်နှင့် ချိတ်ထားသောကြောင့် အခြား crypto များကဲ့သို့ အတက်အကျ မရှိပါ။",
+  // Safe and trusted
+  "why.safe.title": "လုံခြုံပြီး ယုံကြည်စိတ်ချရ",
+  // Backed 100% by Thai baht.
+  "why.safe.body": "ထိုင်းဘတ်ဖြင့် 100% အာမခံထားသည်။",
+  // A digital token
+  "why.token.title": "ဒစ်ဂျစ်တယ်တိုကင်",
+  // Hold value, withdraw, transfer or redeem coupons on the blockchain.
+  "why.token.body": "blockchain ပေါ်တွင် တန်ဖိုးသိမ်းဆည်းခြင်း၊ ထုတ်ယူခြင်း၊ လွှဲပြောင်းခြင်း သို့မဟုတ် ကူပွန်လဲလှယ်ခြင်း ပြုလုပ်နိုင်သည်။",
+  // Easy to use
+  "why.easy.title": "အသုံးပြုရ လွယ်ကူ",
+  // Connect TrueMoney once and start using it right away.
+  "why.easy.body": "TrueMoney ကို တစ်ကြိမ်ချိတ်ဆက်ရုံဖြင့် ချက်ချင်း အသုံးပြုနိုင်သည်။",
+  // Swap across 6 tokens
+  "why.swap.title": "တိုကင် 6 မျိုးဖြင့် လဲလှယ်ပါ",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB.
+  "why.swap.body": "USD, EUR, SGD, AUD နှင့် THB ကို ရည်ညွှန်းသော တိုကင်များနှင့် လဲလှယ်ပါ။",
+  // Up to
+  "why.coupon.upto": "အများဆုံး",
+  // Discounted coupons
+  "why.coupon.title": "လျှော့စျေးကူပွန်များ",
+  // Use THBT to buy coupons at up to 50% off.
+  "why.coupon.body": "THBT ဖြင့် 50% အထိ လျှော့စျေးကူပွန်များ ဝယ်ယူပါ။",
+  // Follow the steps to see how a swap works in the TrueMoney app.
+  "swap.sub": "TrueMoney အက်ပ်တွင် လဲလှယ်ပုံကို အဆင့်လိုက် ကြည့်ရှုပါ။",
+  // Back
+  "swap.prev": "နောက်သို့",
+  // Next
+  "swap.next": "ရှေ့သို့",
+  // Start again
+  "swap.restart": "ပြန်စမည်",
+  // Next step
+  "swap.tapLabel": "နောက်အဆင့်",
+
+  // ---- News (Stay in the loop) and closing Support banner ----
+
+  // Stay in the loop
+  "news.title": "နောက်ဆုံးရ သတင်းများ",
+  // News, product updates and guides from the THBT team.
+  "news.sub": "THBT အဖွဲ့ထံမှ သတင်းများ၊ ထုတ်ကုန်အပ်ဒိတ်များနှင့် လမ်းညွှန်များ။",
+  // Product update
+  "news.tagUpdate": "ထုတ်ကုန်အပ်ဒိတ်",
+  // Guide
+  "news.tagGuide": "လမ်းညွှန်",
+  // Now swap THBT with 6 tokens
+  "news.n1.title": "THBT ကို တိုကင် 6 မျိုးဖြင့် လဲလှယ်နိုင်ပြီ",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB, right in TrueMoney.
+  "news.n1.body": "USD, EUR, SGD, AUD နှင့် THB ကို ရည်ညွှန်းသော တိုကင်များနှင့် TrueMoney ထဲတွင် တိုက်ရိုက် လဲလှယ်ပါ။",
+  // How to swap THBT in the TrueMoney app
+  "news.n2.title": "TrueMoney အက်ပ်တွင် THBT လဲလှယ်နည်း",
+  // A step-by-step walkthrough, from opening Baht Swap to getting your tokens.
+  "news.n2.body": "Baht Swap ဖွင့်ခြင်းမှ တိုကင်ရရှိသည်အထိ အဆင့်လိုက် လမ်းညွှန်။",
+  // THBT explained: your baht, onchain
+  "news.n3.title": "THBT ဆိုတာ: blockchain ပေါ်ရှိ သင့်ဘတ်ငွေ",
+  // What THBT is, who issues it, and how every token is backed 1:1 by Thai baht.
+  "news.n3.body": "THBT ဆိုသည်မှာ ဘာလဲ၊ မည်သူထုတ်ဝေသလဲ၊ တိုကင်တိုင်းကို ထိုင်းဘတ်ဖြင့် 1:1 မည်သို့ အာမခံထားသလဲ။",
+  // Discounted coupons with THBT
+  "news.n4.title": "THBT ဖြင့် လျှော့စျေးကူပွန်များ",
+  // Use THBT to buy digital coupons at up to 50% off.
+  "news.n4.body": "THBT ဖြင့် 50% အထိ လျှော့စျေး ဒစ်ဂျစ်တယ်ကူပွန်များ ဝယ်ယူပါ။",
+  // Need a hand with THBT?
+  "cta.title": "THBT နှင့် ပတ်သက်၍ အကူအညီလိုပါသလား?",
+  // Questions about your wallet, swaps or coupons? Our support team is here to help.
+  "cta.body": "ပိုက်ဆံအိတ်၊ လဲလှယ်ခြင်း သို့မဟုတ် ကူပွန်များအကြောင်း မေးခွန်းရှိပါသလား? ကျွန်ုပ်တို့၏ အကူအညီအဖွဲ့ ကူညီရန် အသင့်ရှိပါသည်။",
+  // Go to Support
+  "cta.button": "အကူအညီ စာမျက်နှာသို့",
+
+  // Previous
+  "news.prev": "ယခင်သတင်း",
+
+  // Next
+  "news.next": "နောက်သတင်း",
+
+  // How to
+  "swap.eyebrow": "လုပ်နည်း"
 };

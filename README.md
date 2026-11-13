@@ -8,8 +8,8 @@ https://kwanchanal.github.io/thbt-demo/
 ```
 index.html
 assets/css/styles.css   # design tokens are CSS custom properties in :root
-assets/img/                # wallet screen, coins/
-assets/js/                 # i18n.js, hero3d.js, stats.js, story.js
+assets/img/                # wallet screen, coins/, swap/ (tutorial screens)
+assets/js/                 # i18n.js, header.js, hero3d.js, story.js, swap.js, news.js, options.js (design options panel)
 assets/i18n/               # th.js, ru.js, my.js translations
 .nojekyll
 .github/workflows/deploy.yml

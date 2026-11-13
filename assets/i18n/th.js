@@ -7,12 +7,6 @@ window.THBT_I18N.th = {
   // THBT — Thai Baht TrueMoney (Demo)
   "meta.title": "THBT — Thai Baht TrueMoney (เดโม)",
 
-  // The easiest way to hold baht onchain.
-  "hero.lead": "วิธีที่ง่ายที่สุดในการถือเงินบาทบนบล็อกเชน",
-
-  // Scroll to explore
-  "hero.scroll": "เลื่อนลงเพื่อดูเพิ่มเติม",
-
   // Your baht, onchain
   "story.s1.title": "เงินบาทของคุณ บนบล็อกเชน",
 
@@ -67,8 +61,6 @@ window.THBT_I18N.th = {
   // Track every token and what it's worth in baht, in one list.
   "story.s9.body": "ดูทุกโทเคนพร้อมมูลค่าเป็นเงินบาท ได้ในรายการเดียว",
 
-  // More sections coming in M1.
-  "footer.note": "ส่วนอื่นๆ จะตามมาใน M1",
 
   // Internal demo of the THBT branding landing page.
   "meta.description": "เดโมภายในของหน้าแลนดิ้งแบรนด์ THBT",
@@ -87,24 +79,6 @@ window.THBT_I18N.th = {
 
   // Jump to feature
   "story.dots": "ข้ามไปยังฟีเจอร์",
-
-  // THBT in numbers
-  "stats.title": "THBT ในตัวเลข",
-
-  // Circulating supply
-  "stats.supply": "อุปทานหมุนเวียน",
-
-  // Market cap
-  "stats.mcap": "มูลค่าตามราคาตลาด",
-
-  // Fully diluted valuation
-  "stats.fdv": "มูลค่าเมื่อออกครบ (FDV)",
-
-  // 24h trading volume
-  "stats.volume": "ปริมาณซื้อขาย 24 ชม.",
-
-  // Illustrative figures for the demo, not live data.
-  "stats.note": "ตัวเลขตัวอย่างสำหรับเดโม ไม่ใช่ข้อมูลเรียลไทม์",
 
   // Frequently asked questions
   "faq.title": "คำถามที่พบบ่อย",
@@ -139,9 +113,6 @@ window.THBT_I18N.th = {
   // Swap in seconds
   "swap.title": "สวอปได้ในไม่กี่วินาที",
 
-  // Watch a real swap in the TrueMoney app, start to finish.
-  "swap.sub": "ดูการสวอปจริงในแอปทรูมันนี่ ตั้งแต่ต้นจนจบ",
-
   // Open Baht Swap right inside TrueMoney.
   "swap.s1": "เปิด Baht Swap ได้เลยในแอปทรูมันนี่",
 
@@ -160,24 +131,123 @@ window.THBT_I18N.th = {
   // Done. Your USDT is in your wallet.
   "swap.s6": "เรียบร้อย! USDT เข้ากระเป๋าของคุณแล้ว",
 
-  // Swap steps
-  "swap.steps": "ขั้นตอนการสวอป",
-
-  // Pause
-  "swap.pause": "หยุด",
-
-  // Play
-  "swap.play": "เล่น",
-
-  // Previous feature
-  "story.prev": "ฟีเจอร์ก่อนหน้า",
-
-  // Next feature
-  "story.next": "ฟีเจอร์ถัดไป",
-
   // Our Service
   "story.title": "บริการของเรา",
 
   // Programmable Payment Program
-  "header.title": "โครงการ Programmable Payment"
+  "header.title": "โครงการ Programmable Payment",
+
+  // ---- Redesign (Figma comments 2026-11-13): hero, trust box, Why THBT, swap tutorial ----
+
+  // Connecting currencies easier than ever
+  "hero.lead": "เชื่อมต่อเหรียญดิจิทัลได้ง่ายที่สุด",
+
+  // THBT (Thai Baht TrueMoney) is a digital token issued by TrueMoney Co., Ltd. on the public Base blockchain, with its value pegged 1:1 to the Thai baht. Every THBT token issued is backed 100% by fiat currency securely held in bank accounts, with regular audits conducted to ensure transparency and stability.
+  "hero.about": "THBT คือ Thai Baht TrueMoney (THBT) หน่วยข้อมูลอิเล็กทรอนิกส์ที่กำหนดมูลค่าคงที่อิงมูลค่าเงินบาทในอัตรา 1:1 ที่ออกโดยบริษัท ทรู มันนี่ จำกัด บนบล็อกเชนสาธารณะ Base chain ทุกเหรียญ THBT ที่ถูกสร้างขึ้น จะมีการสำรองเงินบาทในบัญชีธนาคารอย่างปลอดภัย 100% และมีการตรวจสอบเงินสำรองเป็นประจำ เพื่อให้เกิดความโปร่งใสและสร้างความมั่นใจในความมั่นคงของเหรียญ",
+  // Expanded to 6 token swaps
+  "hero.tokens": "ขยายการแลกเปลี่ยนเพิ่มเป็น 6 สกุล",
+  // See how it works
+  "hero.cta": "ดูวิธีใช้งาน",
+  // A regulated pilot
+  "trust.title": "โครงการทดสอบภายใต้การกำกับดูแล",
+  // THBT service is operated by True Money Co., Ltd. under the Bank of Thailand's (BOT) Enhanced Regulatory Sandbox for Programmable Payments. Users can purchase digital coupons or swap THBT for other participating digital tokens through Ascend Bit Co., Ltd., which operates under the Digital Asset Regulatory Sandbox of the Securities and Exchange Commission (SEC), Thailand.
+  "trust.body": "บริการ THBT ดำเนินการโดยบริษัท ทรู มันนี่ จำกัด ภายใต้โครงการ Enhanced Regulatory Sandbox สำหรับ Programmable Payment ของธนาคารแห่งประเทศไทย (ธปท.) ผู้ใช้งานสามารถซื้อคูปองดิจิทัล หรือแลกเปลี่ยน THBT กับโทเคนดิจิทัลอื่นที่เข้าร่วมโครงการ ผ่านบริษัท แอสเซนด์ บิต จำกัด ซึ่งดำเนินการภายใต้ Digital Asset Regulatory Sandbox ของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.)",
+  // Pilot period
+  "trust.periodLabel": "ระยะเวลาโครงการ",
+  // Today – 31 Dec 2026
+  "trust.period": "วันนี้ – 31 ธ.ค. 2569",
+  // Participants
+  "trust.usersLabel": "ผู้เข้าร่วม",
+  // Limited to 20,000
+  "trust.users": "จำกัด 20,000 คน",
+  // Issuance limit
+  "trust.limitLabel": "วงเงินการออกเหรียญ",
+  // 10,000 THBT per user per month
+  "trust.limit": "10,000 THBT ต่อคนต่อเดือน",
+  // Why THBT
+  "why.title": "ทำไมต้อง THBT",
+  // A stable digital baht, built into the TrueMoney app.
+  "why.sub": "เงินบาทดิจิทัลมูลค่าคงที่ ใช้งานได้ในแอปทรูมันนี่",
+  // Your tokens, in TrueMoney
+  "why.wallet.title": "จัดการโทเคนในทรูมันนี่",
+  // Manage your tokens easily with the digital wallet in the TrueMoney app.
+  "why.wallet.body": "จัดการโทเคนของคุณได้ง่ายๆ ด้วยกระเป๋าดิจิทัลในแอปทรูมันนี่",
+  // Stable value
+  "why.stable.title": "มูลค่าคงที่",
+  // Pegged to the Thai baht, so it doesn't swing up and down like other crypto.
+  "why.stable.body": "ไม่ขึ้นลงเหมือนคริปโตทั่วไป เพราะตรึงไว้กับเงินบาท",
+  // Safe and trusted
+  "why.safe.title": "ปลอดภัย เชื่อถือได้",
+  // Backed 100% by Thai baht.
+  "why.safe.body": "สกุลเงินบาทหนุน 100%",
+  // A digital token
+  "why.token.title": "โทเคนรูปแบบดิจิทัล",
+  // Hold value, withdraw, transfer or redeem coupons on the blockchain.
+  "why.token.body": "เก็บมูลค่า ถอน โอน หรือแลกคูปองในโลกบล็อกเชน",
+  // Easy to use
+  "why.easy.title": "สะดวก ใช้งานง่าย",
+  // Connect TrueMoney once and start using it right away.
+  "why.easy.body": "เชื่อมต่อทรูมันนี่ครั้งเดียว เข้าถึงง่าย ใช้ได้ทันที",
+  // Swap across 6 tokens
+  "why.swap.title": "สวอปได้ 6 สกุล",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB.
+  "why.swap.body": "สวอปกับโทเคนที่อ้างอิงสกุลเงิน USD, EUR, SGD, AUD และ THB",
+  // Up to
+  "why.coupon.upto": "ลดสูงสุด",
+  // Discounted coupons
+  "why.coupon.title": "คูปองราคาพิเศษ",
+  // Use THBT to buy coupons at up to 50% off.
+  "why.coupon.body": "ใช้ THBT ซื้อคูปองส่วนลดสูงสุด 50%",
+  // Follow the steps to see how a swap works in the TrueMoney app.
+  "swap.sub": "ทำตามทีละขั้นตอน เพื่อดูวิธีสวอปในแอปทรูมันนี่",
+  // Back
+  "swap.prev": "ย้อนกลับ",
+  // Next
+  "swap.next": "ถัดไป",
+  // Start again
+  "swap.restart": "เริ่มใหม่",
+  // Next step
+  "swap.tapLabel": "ไปขั้นตอนถัดไป",
+
+  // ---- News (Stay in the loop) and closing Support banner ----
+
+  // Stay in the loop
+  "news.title": "อัปเดตล่าสุด",
+  // News, product updates and guides from the THBT team.
+  "news.sub": "ข่าวสาร อัปเดตฟีเจอร์ และคู่มือการใช้งานจากทีม THBT",
+  // Product update
+  "news.tagUpdate": "อัปเดตฟีเจอร์",
+  // Guide
+  "news.tagGuide": "คู่มือ",
+  // Now swap THBT with 6 tokens
+  "news.n1.title": "สวอป THBT ได้แล้ว 6 สกุล",
+  // Swap with tokens referenced to USD, EUR, SGD, AUD and THB, right in TrueMoney.
+  "news.n1.body": "สวอปกับโทเคนที่อ้างอิงสกุลเงิน USD, EUR, SGD, AUD และ THB ได้ในแอปทรูมันนี่",
+  // How to swap THBT in the TrueMoney app
+  "news.n2.title": "วิธีสวอป THBT ในแอปทรูมันนี่",
+  // A step-by-step walkthrough, from opening Baht Swap to getting your tokens.
+  "news.n2.body": "ทำตามทีละขั้นตอน ตั้งแต่เปิด Baht Swap จนได้รับโทเคน",
+  // THBT explained: your baht, onchain
+  "news.n3.title": "รู้จัก THBT: เงินบาทของคุณ บนบล็อกเชน",
+  // What THBT is, who issues it, and how every token is backed 1:1 by Thai baht.
+  "news.n3.body": "THBT คืออะไร ใครเป็นผู้ออก และทุกเหรียญมีเงินบาทหนุนหลัง 1:1 อย่างไร",
+  // Discounted coupons with THBT
+  "news.n4.title": "ซื้อคูปองราคาพิเศษด้วย THBT",
+  // Use THBT to buy digital coupons at up to 50% off.
+  "news.n4.body": "ใช้ THBT ซื้อคูปองดิจิทัล ส่วนลดสูงสุด 50%",
+  // Need a hand with THBT?
+  "cta.title": "มีคำถามเกี่ยวกับ THBT?",
+  // Questions about your wallet, swaps or coupons? Our support team is here to help.
+  "cta.body": "สงสัยเรื่องกระเป๋า การสวอป หรือคูปอง? ทีมซัพพอร์ตพร้อมช่วยเหลือคุณ",
+  // Go to Support
+  "cta.button": "ไปที่หน้าช่วยเหลือ",
+
+  // Previous
+  "news.prev": "ข่าวก่อนหน้า",
+
+  // Next
+  "news.next": "ข่าวถัดไป",
+
+  // How to
+  "swap.eyebrow": "วิธีใช้งาน"
 };
