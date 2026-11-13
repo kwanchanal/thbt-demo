@@ -148,8 +148,6 @@ window.THBT_I18N.my = {
   "hero.tokens": "တိုကင် 6 မျိုးအထိ လဲလှယ်နိုင်ပါပြီ",
   // See how it works
   "hero.cta": "အသုံးပြုပုံ ကြည့်ရန်",
-  // A regulated pilot
-  "trust.title": "စည်းကမ်းထိန်းချုပ်မှုအောက်ရှိ စမ်းသပ်စီမံကိန်း",
   // THBT service is operated by True Money Co., Ltd. under the Bank of Thailand's (BOT) Enhanced Regulatory Sandbox for Programmable Payments. Users can purchase digital coupons or swap THBT for other participating digital tokens through Ascend Bit Co., Ltd., which operates under the Digital Asset Regulatory Sandbox of the Securities and Exchange Commission (SEC), Thailand.
   "trust.body": "THBT ဝန်ဆောင်မှုကို True Money Co., Ltd. က ထိုင်းနိုင်ငံတော်ဘဏ် (BOT) ၏ Programmable Payments အတွက် Enhanced Regulatory Sandbox အောက်တွင် လုပ်ဆောင်ပါသည်။ အသုံးပြုသူများသည် ဒစ်ဂျစ်တယ်ကူပွန်များ ဝယ်ယူနိုင်ပြီး THBT ကို ပါဝင်သော အခြားဒစ်ဂျစ်တယ်တိုကင်များနှင့် Ascend Bit Co., Ltd. မှတစ်ဆင့် လဲလှယ်နိုင်ပါသည်။ Ascend Bit Co., Ltd. သည် ထိုင်းနိုင်ငံ စတော့ရှယ်ယာနှင့် လဲလှယ်ရေးကော်မရှင် (SEC) ၏ Digital Asset Regulatory Sandbox အောက်တွင် လုပ်ဆောင်ပါသည်။",
   // Pilot period
@@ -249,5 +247,8 @@ window.THBT_I18N.my = {
   "news.next": "နောက်သတင်း",
 
   // How to
-  "swap.eyebrow": "လုပ်နည်း"
+  "swap.eyebrow": "လုပ်နည်း",
+
+  // Programmable Payment under the Enhanced Regulatory Sandbox and the Digital Asset Regulatory Sandbox
+  "trust.title": "Enhanced Regulatory Sandbox နှင့် Digital Asset Regulatory Sandbox အောက်ရှိ Programmable Payment"
 };

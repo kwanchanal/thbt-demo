@@ -16,6 +16,15 @@
       ],
     },
     {
+      key: "trust",
+      title: "1.1 กล่อง Programmable Payment: สีพื้นหลัง",
+      options: [
+        { value: "navy", label: "กรมท่า (เหมือนกล่อง Swap)", swatch: "#121a33" },
+        { value: "soft", label: "ส้มอ่อน", swatch: "#fff1e7" },
+        { value: "white", label: "ขาว (เหมือน hero)", swatch: "#ffffff" },
+      ],
+    },
+    {
       key: "icons",
       title: "2. Why THBT: สไตล์ไอคอน",
       options: [

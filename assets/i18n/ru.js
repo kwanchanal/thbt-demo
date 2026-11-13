@@ -148,8 +148,6 @@ window.THBT_I18N.ru = {
   "hero.tokens": "Теперь обмен на 6 токенов",
   // See how it works
   "hero.cta": "Как это работает",
-  // A regulated pilot
-  "trust.title": "Регулируемый пилотный проект",
   // THBT service is operated by True Money Co., Ltd. under the Bank of Thailand's (BOT) Enhanced Regulatory Sandbox for Programmable Payments. Users can purchase digital coupons or swap THBT for other participating digital tokens through Ascend Bit Co., Ltd., which operates under the Digital Asset Regulatory Sandbox of the Securities and Exchange Commission (SEC), Thailand.
   "trust.body": "Сервис THBT предоставляет компания True Money Co., Ltd. в рамках Enhanced Regulatory Sandbox Банка Таиланда (BOT) для программируемых платежей. Пользователи могут покупать цифровые купоны или обменивать THBT на другие участвующие цифровые токены через Ascend Bit Co., Ltd., которая работает в рамках Digital Asset Regulatory Sandbox Комиссии по ценным бумагам и биржам Таиланда (SEC).",
   // Pilot period
@@ -249,5 +247,8 @@ window.THBT_I18N.ru = {
   "news.next": "Далее",
 
   // How to
-  "swap.eyebrow": "Как это сделать"
+  "swap.eyebrow": "Как это сделать",
+
+  // Programmable Payment under the Enhanced Regulatory Sandbox and the Digital Asset Regulatory Sandbox
+  "trust.title": "Programmable Payment в рамках Enhanced Regulatory Sandbox и Digital Asset Regulatory Sandbox"
 };
